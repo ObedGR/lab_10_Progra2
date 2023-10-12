@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 70%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla en la página */
+    border-collapse: collapse; /* Elimina los espacios dobles entre bordes */
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente en la tabla */
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Sombra simple para la tabla */
+}
+
+th,
+td {
+    padding: 12px 15px; /* Espaciado interno para todas las celdas */
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd; /* Línea de separación entre filas */
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3; /* Colores alternos para las filas, para mejorar la legibilidad */
+}
+
+tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón sobre una fila */
+    cursor: pointer;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 15%;
+}

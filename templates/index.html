@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Registro de libros</title>
+</head>
+
+<body>
+    <form action="{{ url_for('enviar_libro') }}" method="post" onsubmit="return validarFormulario()" id="formulario" class="formulario">
+        <div class="Titulo-Entrada">
+            <label for="Titulo">Titulo del libro</label>
+            <input type="text" id="Titulo" name="Titulo" placeholder="Titulo">
+        </div>
+        <div class="Autor-Entrada">
+            <label for="Autor">Autor del libro</label>
+            <input type="text" id="Autor" name="Autor" placeholder="Autor">
+        </div>
+        <div class="Editorial-Entrada">
+            <label for="Editorial">Editorial del libro</label>
+            <input type="text" id="Editorial" name="Editorial" placeholder="Editorial">
+        </div>
+        <div class="Paginas-Entrada">
+            <label for="Paginas">Paginas del libro</label>
+            <input type="text" id="Paginas" name="Paginas" placeholder="Numero de paginas">
+        </div>
+        <div class="Publicacion-Entrada">
+            <label for="Anio">Año del libro</label>
+            <input type="text" id="Anio" name="Anio" placeholder="Año">
+        </div>
+        <div class="ISBN-Entrada">
+            <label for="ISBN">ISBN</label>
+            <input type="text" id="ISBN" name="ISBN" placeholder="ISBN">
+        </div>
+        <div>
+            <Error id="js-Error" class="Error-js">Rellene los campos de manera correcta</Error>
+        </div>
+        <div>
+            <message class="Error">{{ mensaje }}</message>
+        </div>
+        <div class="Submit">
+            <input type="submit" id="submit" name="submit" value="Enviar">
+        </div>
+    </form>
+    <script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+</body>
+
+</html>

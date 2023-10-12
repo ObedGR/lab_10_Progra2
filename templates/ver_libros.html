@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/table.css') }}"/>
+    <title>Lista de Libros</title>
+  </head>
+  <body>
+    <div>
+      <h1>Libros Ingresados</h1>
+    </div>
+    <div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Paginas</th>
+            <th>Año</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for Libro in lista %}
+          <tr>
+            <td>{{ Libro.get_Titulo() }}</td>
+            <td>{{ Libro.get_Autor() }}</td>
+            <td>{{ Libro.get_Editorial() }}</td>
+            <td>{{ Libro.get_Paginas() }}</td>
+            <td>{{ Libro.get_Anio() }}</td>
+            <td>{{ Libro.get_ISBN() }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div>
+        <button type="button" onclick="location.href='{{ url_for('index') }}'">Volver</button>
+    </div>
+  </body>
+</html>
