@@ -12,18 +12,18 @@ h1 {
 
 /* Estilos para la tabla */
 table {
-    width: 70%; 
-    margin: 20px auto; 
-    border-collapse: collapse; 
-    font-size: 0.9em; 
+    width: 70%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto; /* Centra la tabla en la página */
+    border-collapse: collapse; /* Elimina los espacios dobles entre bordes */
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente en la tabla */
     background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Sombra simple para la tabla */
 }
 
 th,
 td {
-    padding: 12px 15px; 
-    text-align: left; 
+    padding: 12px 15px; /* Espaciado interno para todas las celdas */
+    text-align: left; /* Alineación de texto a la izquierda */
 }
 
 th {
@@ -32,15 +32,15 @@ th {
 }
 
 tr {
-    border-bottom: 1px solid #dddddd; 
+    border-bottom: 1px solid #dddddd; /* Línea de separación entre filas */
 }
 
 tr:nth-child(even) {
-    background-color: #f3f3f3; 
+    background-color: #f3f3f3; /* Colores alternos para las filas, para mejorar la legibilidad */
 }
 
 tr:hover {
-    background-color: #ddd; 
+    background-color: #ddd; /* Color de fondo al pasar el ratón sobre una fila */
     cursor: pointer;
 }
 
